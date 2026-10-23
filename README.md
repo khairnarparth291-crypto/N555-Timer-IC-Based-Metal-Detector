@@ -2,9 +2,7 @@
 
 A low-cost electronics project developed using the NE555 timer IC, an inductive search coil, and basic electronic components to explore metal detection through an electronic circuit.
 
-<p align="center">
-  <img src="circuit/circuit-diagram.png" alt="Circuit diagram of the NE555 timer-based metal detector" width="800">
-</p>
+
 
 <p align="center">
   <b>Analog Electronics | NE555 Timer | PCB Design | Hardware Prototyping</b>
