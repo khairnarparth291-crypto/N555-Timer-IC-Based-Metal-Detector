@@ -1,190 +1,198 @@
 # 🔎 Metal Detector Using NE555 Timer IC
 
-An affordable electronics project demonstrating a metal detector circuit built using the NE555 timer IC, an inductive coil, and basic electronic components.
+A low-cost electronics project developed using the NE555 timer IC, an inductive search coil, and basic electronic components to explore metal detection through an electronic circuit.
 
 <p align="center">
-  <img src="circuit/circuit-diagram.png" alt="NE555 Timer IC Metal Detector Circuit Diagram" width="750">
+  <img src="circuit/circuit-diagram.png" alt="Circuit diagram of the NE555 timer-based metal detector" width="800">
 </p>
 
-## 📌 Project Overview
+<p align="center">
+  <b>Analog Electronics | NE555 Timer | PCB Design | Hardware Prototyping</b>
+</p>
 
-The **Metal Detector Using NE555 Timer IC** is an electronics project developed as part of the PCB Design and Fabrication subject during the second year of Electronics and Telecommunication Engineering.
+---
 
-The prototype uses an NE555 timer IC, an inductive coil, resistors, capacitors, a red LED, and a buzzer. It is powered by a 9V battery and assembled on a perforated PCB.
+## 📌 1. Project Overview
 
-The project explores the practical application of timer circuits, inductive sensing, PCB design, soldering, and hardware testing.
+The **Metal Detector Using NE555 Timer IC** is an academic electronics project developed as part of the PCB Design and Fabrication subject during the second year of Electronics and Telecommunication Engineering.
 
-## 🎯 Project Objectives
+The prototype uses an NE555 timer IC, an inductive coil, resistors, capacitors, a red LED, and a buzzer. The circuit is powered by a 9V battery and assembled on a perforated PCB.
+
+The project demonstrates practical electronics concepts, including timer circuits, inductive sensing, PCB layout, soldering, circuit assembly, and hardware testing.
+
+## 🎯 2. Project Objectives
 
 * Understand the operation of the NE555 timer IC.
-* Design and assemble a metal detector circuit.
-* Explore inductive sensing and electromagnetic interactions with nearby metal.
-* Learn PCB layout, component placement, and soldering.
-* Use a red LED and buzzer as output indicators.
-* Test the prototype using different metallic objects.
-* Develop practical analog electronics and hardware debugging skills.
+* Build a basic metal detector circuit.
+* Explore the interaction between an inductive coil and nearby metallic objects.
+* Learn PCB component placement and track routing.
+* Practise through-hole soldering and hardware assembly.
+* Understand the role of resistors and capacitors in timer circuits.
+* Test the prototype using different objects.
+* Develop practical analog electronics and debugging skills.
 
-## 🧰 Hardware Components
+## 🧰 3. Hardware Components
 
 The following components are documented in the project report.
 
-| No. | Component                   | Specification                | Purpose                                |
-| --: | --------------------------- | ---------------------------- | -------------------------------------- |
-|   1 | NE555 timer IC              | DIP-8 package                | Timer and oscillator circuit           |
-|   2 | Resistor                    | 1 kΩ                         | Current limiting and circuit operation |
-|   3 | Resistors                   | 10 kΩ, 2 units               | Timing network                         |
-|   4 | Capacitors                  | 2.2 µF, 2 units              | Timing network                         |
-|   5 | Capacitor                   | 100 nF                       | Noise bypassing                        |
-|   6 | Inductor coil               | 10 mH, as documented         | Metal-sensing element                  |
-|   7 | Red LED                     | 5 mm                         | Visual indication                      |
-|   8 | Buzzer                      | Active buzzer, as documented | Audible indication                     |
-|   9 | Battery                     | 9V                           | Power supply                           |
-|  10 | ON/OFF switch               | SPST                         | Power control                          |
-|  11 | IC socket                   | 8-pin                        | Removable mounting for the NE555       |
-|  12 | PCB                         | Approximately 2 × 3 inches   | Component mounting                     |
-|  13 | Battery connector and wires | Suitable for the circuit     | Electrical connections                 |
+| No. | Component                   | Specification                             | Purpose                                |
+| --: | --------------------------- | ----------------------------------------- | -------------------------------------- |
+|   1 | Timer IC                    | NE555, DIP-8                              | Main timing and oscillator circuit     |
+|   2 | Inductive coil              | 10 mH, as documented                      | Intended metal-sensing element         |
+|   3 | Resistor                    | 1 kΩ                                      | Current limiting and circuit operation |
+|   4 | Resistors                   | 10 kΩ, 2 units                            | Timing network                         |
+|   5 | Capacitors                  | 2.2 µF, 2 units                           | Timing network                         |
+|   6 | Capacitor                   | 100 nF                                    | Bypass and noise reduction             |
+|   7 | LED                         | Red                                       | Visual indication                      |
+|   8 | Buzzer                      | As used in the prototype                  | Audible indication                     |
+|   9 | Battery                     | 9V                                        | Power supply                           |
+|  10 | Switch                      | SPST                                      | Power ON/OFF control                   |
+|  11 | IC socket                   | 8-pin                                     | NE555 mounting                         |
+|  12 | PCB                         | Approximately 2 × 3 inches, as documented | Component mounting                     |
+|  13 | Battery connector and wires | Suitable for the circuit                  | Power and electrical connections       |
 
-*Note: Component specifications are taken from the project report. Verify the final assembled circuit and component values before reproducing the design.*
+**Note:** Verify the component values and quantities against the final assembled circuit before reproducing the design.
 
-## ⚙️ Working Principle
+## ⚙️ 4. Working Principle
 
-### 1. Power Supply
+### 4.1 Power Supply
 
-A 9V battery supplies power to the circuit. An ON/OFF switch controls the power supply.
+A 9V battery supplies electrical power to the circuit. An ON/OFF switch allows the circuit to be powered up or shut down.
 
-### 2. NE555 Timer IC
+### 4.2 NE555 Timer IC
 
-The NE555 timer is the primary active component. The project report describes it as operating in astable mode to generate a continuously repeating output signal.
+The NE555 is the main active component in the design. The project report describes its operation as an astable oscillator.
 
-The timing behaviour depends on the connected resistors, capacitors, and the actual circuit topology.
+In astable mode, the NE555 can generate a repeating output waveform. The timing behaviour depends on the circuit topology and the connected resistors and capacitors.
 
-### 3. Detection Coil
+### 4.3 Inductive Search Coil
 
-The circuit includes an inductive coil intended to sense nearby metallic objects.
+The circuit includes an inductive coil intended to interact with nearby metallic objects.
 
-When metal approaches a coil carrying a varying current, electromagnetic interactions can alter the coil's effective electrical behaviour. Whether this produces a measurable change in the detector's output depends on the circuit design.
+A changing current in a coil creates a magnetic field. A nearby metal object can affect the coil's electrical behaviour through electromagnetic interactions.
 
-### 4. Output Indication
+The exact way these changes influence the NE555 output depends on how the coil is connected to the circuit. That relationship must be confirmed through circuit analysis and measurement.
 
-The circuit includes two output indicators:
+### 4.4 Visual and Audible Indication
+
+The prototype contains a red LED and a buzzer.
 
 * **Red LED:** Provides a visual indication.
 * **Buzzer:** Provides an audible indication.
 
-The project report describes changes in the output response when metal approaches the coil.
+The circuit diagram and project report associate these outputs with the detector's operation. The exact activation conditions should be verified against the physical circuit and experimental observations.
 
-The exact relationship between the coil, oscillator, and output indicators should be verified against the final circuit and experimental measurements.
+## 🔌 5. Circuit Diagram
 
-## 🔌 Circuit Diagram
+The following diagram documents the circuit arrangement described in the project report.
 
-The following diagram documents the proposed circuit arrangement for the NE555 timer-based metal detector.
+![NE555 Metal Detector Circuit Diagram](circuit/circuit-diagram.png)
 
-![NE555 Timer IC Metal Detector Circuit Diagram](circuit/circuit-diagram.png)
+The diagram identifies the NE555 timer IC, detection coil, resistors, capacitors, battery, switch, LED, and buzzer.
 
-The circuit diagram identifies the power supply, NE555 timer IC, resistors, capacitors, inductive coil, LED, buzzer, and ON/OFF switch.
+Before reproducing the circuit, verify the pin connections, component polarities, and electrical values against the actual hardware.
 
-**Important:** Refer to the diagram and verify component connections before assembling or modifying the circuit.
+## 🖥️ 6. PCB Design
 
-## 🖥️ PCB Design
+PCB design and component placement were part of the project. The following images document the design and hardware assembly.
 
-PCB design was part of the project, including component placement and track routing.
+### 6.1 PCB Track Layout
 
-### PCB Track Layout
+The track layout illustrates the intended electrical connections between circuit components.
 
-The track layout illustrates the intended electrical connections between the circuit components.
+![PCB Track Layout](images/pcb-track-layout.jpeg)
 
-![PCB Track Layout](images/metal%20detector%202.jpeg)
+### 6.2 PCB Component Layout
 
-### PCB Component Layout
+The component layout shows the planned placement of components on the PCB.
 
-The component layout illustrates the planned placement of the components on the PCB.
+![PCB Component Layout](images/pcb-component-layout.jpeg)
 
-![PCB Component Layout](images/metal%20detector%201.jpeg)
+### 6.3 Soldering and Wiring
 
-### Soldering and Wiring
+The soldering-side photograph documents the physical wiring and assembly of the circuit.
 
-The soldering-side photograph documents the physical assembly and wiring of the prototype.
+![PCB Soldering Side](images/pcb-soldering-side.jpeg)
 
-![PCB Soldering Side](images/metal%20detector%203.jpeg)
+## 📸 7. Working Prototype
 
-## 📸 Working Prototype
+The prototype includes the detection coil, NE555-based circuit, red LED, ON/OFF switch, and 9V battery.
 
-The completed prototype consists of the detection coil, NE555-based circuit, red LED, ON/OFF switch, and 9V battery.
+![Completed Metal Detector Prototype](images/working-prototype.jpeg)
 
-![Metal Detector Prototype](images/metal%20detector.jpeg)
+This photograph documents the physical implementation of the project.
 
-The photograph documents the physical implementation of the project.
+## 🧪 8. Testing and Observations
 
-## 🧪 Testing and Reported Results
+The project report describes testing the detector with several objects, including a coin, a metal spoon, an iron bolt, aluminium foil, and a plastic object.
 
-The project report describes testing with several objects, including a coin, a metal spoon, an iron bolt, aluminium foil, and a plastic object.
+The following table records the observations reported in the project document.
 
-The following table reproduces the reported observations.
-
-| Test object    | Material reported                  | Reported detection distance |
+| Test object    | Material identified in the report  | Reported detection distance |
 | -------------- | ---------------------------------- | --------------------------: |
 | 1 Rupee coin   | Steel, as identified in the report |                      4–5 cm |
 | Metal spoon    | Stainless steel                    |                      7–8 cm |
-| Iron bolt      | Ferrous iron                       |                     8–10 cm |
+| Iron bolt      | Iron                               |                     8–10 cm |
 | Aluminium foil | Aluminium                          |                      2–3 cm |
-| Plastic pen    | Plastic                            |                No detection |
+| Plastic pen    | Plastic                            |       No detection reported |
 
-**These are results reported in the project document, not independently verified measurements.** Actual performance can vary with the object, coil geometry, circuit construction, and test conditions.
+**Important:** These values are reported results from the project document. They have not been independently verified through repeated testing.
 
-The report also describes an estimated normal oscillation frequency of approximately 31 Hz. This value should be checked against the actual circuit and measured output waveform before being treated as a verified operating frequency.
+Actual detection performance may vary with the object, coil geometry, orientation, circuit construction, and test conditions. These values should not be treated as guaranteed detection ranges.
 
-## 🧠 Engineering Concepts Demonstrated
+## 🧠 9. Engineering Concepts Demonstrated
 
-This project provides practical exposure to:
+This project provides practical experience with:
 
 * NE555 timer IC operation.
-* Oscillator circuits.
+* Astable oscillator concepts.
 * Resistor-capacitor timing networks.
 * Inductors and electromagnetic interactions.
-* Basic electronic circuit design.
+* Analog electronic circuit design.
 * PCB layout and component placement.
 * Through-hole soldering.
-* Power supply connections.
+* Battery-powered circuit construction.
 * Hardware testing and troubleshooting.
 * Technical documentation.
 
-## ⚠️ Limitations
+## ⚠️ 10. Limitations
 
-* The prototype's detection range is limited and depends on the test object.
-* Detection performance may vary with coil geometry and orientation.
-* The device does not identify the exact type of metal.
-* The reported detection distances require repeatable experimental verification.
-* The relationship between the coil and oscillator response needs confirmation from the actual circuit.
-* No independently verified false-alarm rate or long-term reliability data is available in this repository.
-* The device is an educational prototype, not a certified security or industrial inspection instrument.
+* Detection range is limited and may vary between objects.
+* Detection performance depends on coil characteristics and object orientation.
+* The detector does not identify the exact type of metal.
+* Reported detection distances require repeatable experimental verification.
+* The exact relationship between the coil and the oscillator response needs confirmation.
+* No independently verified false-alarm rate or long-term reliability data is currently documented.
+* The prototype is not a certified security, industrial inspection, or safety device.
 
-## 🚀 Future Improvements
+## 🚀 11. Future Improvements
 
 Potential improvements include:
 
-* Verify the circuit connections against the final PCB.
-* Measure the output waveform using an oscilloscope.
-* Compare oscillator behaviour with and without nearby metal.
-* Conduct repeatable detection-range tests using different objects.
+* Verify the circuit against the assembled hardware.
+* Measure the NE555 output waveform with an oscilloscope.
+* Compare output behaviour with and without nearby metal.
+* Conduct repeatable detection-range experiments.
 * Record test conditions and measured results.
 * Improve PCB routing and soldering documentation.
-* Add a detailed component-to-pin connection table.
+* Add a detailed NE555 pin-connection table.
 * Improve mechanical protection and portability.
 
-## 🔋 Power and Safety
+## 🔋 12. Power and Safety
 
 The documented prototype uses a 9V battery.
 
 Before powering or modifying the circuit:
 
-* Verify the battery polarity.
-* Check the NE555 pin orientation.
+* Check the battery polarity.
+* Confirm the NE555 pin orientation.
 * Inspect solder joints for shorts.
-* Confirm the polarity of electrolytic capacitors and the LED.
-* Verify the buzzer's voltage and current requirements.
+* Verify LED and electrolytic capacitor polarity.
+* Check the buzzer's voltage and current requirements.
 * Disconnect the battery before soldering or changing connections.
+* Avoid short-circuiting the battery terminals.
 
-## 📂 Repository Structure
+## 📂 13. Repository Structure
 
 ```text
 N555-Timer-IC-Based-Metal-Detector/
@@ -197,27 +205,31 @@ N555-Timer-IC-Based-Metal-Detector/
 │
 └── images/
     ├── README.md
-    ├── metal detector.jpeg
-    ├── metal detector 1.jpeg
-    ├── metal detector 2.jpeg
-    └── metal detector 3.jpeg
+    ├── pcb-component-layout.jpeg
+    ├── pcb-soldering-side.jpeg
+    ├── pcb-track-layout.jpeg
+    └── working-prototype.jpeg
 ```
 
-This structure documents the circuit, PCB layouts, and physical prototype.
+## 👨‍🎓 14. Project Information
 
-## 👨‍🎓 Project Information
+| Field            | Details                                          |
+| ---------------- | ------------------------------------------------ |
+| Project title    | Metal Detector Using NE555 Timer IC              |
+| Department       | Electronics and Telecommunication Engineering    |
+| Institution      | D. Y. Patil College of Engineering, Akurdi, Pune |
+| Academic year    | 2025–2026                                        |
+| Subject          | PCB Design and Fabrication                       |
+| Project category | Analog Electronics and Hardware Prototyping      |
 
-* **Project title:** Design and Implementation of a Metal Detector Using NE555 Timer IC
-* **Department:** Electronics and Telecommunication Engineering
-* **Institution:** D. Y. Patil College of Engineering, Akurdi, Pune
-* **Academic year:** 2025–2026
-* **Subject:** PCB Design and Fabrication
-* **Project type:** Academic electronics hardware project
+## 🤝 15. Acknowledgements
 
-## 🤝 Acknowledgements
+This project was developed as part of academic coursework in PCB Design and Fabrication.
 
-This project was completed as part of an academic group project under the guidance of the subject instructor.
+## 📜 16. Disclaimer
 
-## 📜 Disclaimer
+This project is intended for educational and demonstration purposes. Reported detection distances are not guaranteed performance specifications. The circuit should be verified and tested before practical use.
 
-This project is intended for educational purposes. Its reported detection range and behaviour should not be assumed to represent guaranteed performance. Verify the circuit and test results before using the design in practical applications.
+---
+
+**Project repository:** [N555-Timer-IC-Based-Metal-Detector](https://github.com/khairnarparth291-crypto/N555-Timer-IC-Based-Metal-Detector)
