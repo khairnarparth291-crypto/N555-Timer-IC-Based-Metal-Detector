@@ -176,58 +176,5 @@ Potential improvements include:
 * Add a detailed NE555 pin-connection table.
 * Improve mechanical protection and portability.
 
-## 🔋 12. Power and Safety
-
-The documented prototype uses a 9V battery.
-
-Before powering or modifying the circuit:
-
-* Check the battery polarity.
-* Confirm the NE555 pin orientation.
-* Inspect solder joints for shorts.
-* Verify LED and electrolytic capacitor polarity.
-* Check the buzzer's voltage and current requirements.
-* Disconnect the battery before soldering or changing connections.
-* Avoid short-circuiting the battery terminals.
-
-## 📂 13. Repository Structure
-
-```text
-N555-Timer-IC-Based-Metal-Detector/
-│
-├── README.md
-│
-├── circuit/
-│   ├── circuit-diagram.png
-│   └── README.md
-│
-└── images/
-    ├── README.md
-    ├── pcb-component-layout.jpeg
-    ├── pcb-soldering-side.jpeg
-    ├── pcb-track-layout.jpeg
-    └── working-prototype.jpeg
-```
-
-## 👨‍🎓 14. Project Information
-
-| Field            | Details                                          |
-| ---------------- | ------------------------------------------------ |
-| Project title    | Metal Detector Using NE555 Timer IC              |
-| Department       | Electronics and Telecommunication Engineering    |
-| Institution      | D. Y. Patil College of Engineering, Akurdi, Pune |
-| Academic year    | 2025–2026                                        |
-| Subject          | PCB Design and Fabrication                       |
-| Project category | Analog Electronics and Hardware Prototyping      |
-
-## 🤝 15. Acknowledgements
-
-This project was developed as part of academic coursework in PCB Design and Fabrication.
-
-## 📜 16. Disclaimer
-
-This project is intended for educational and demonstration purposes. Reported detection distances are not guaranteed performance specifications. The circuit should be verified and tested before practical use.
-
----
 
 **Project repository:** [N555-Timer-IC-Based-Metal-Detector](https://github.com/khairnarparth291-crypto/N555-Timer-IC-Based-Metal-Detector)
