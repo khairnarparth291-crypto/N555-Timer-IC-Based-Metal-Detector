@@ -163,18 +163,5 @@ This project provides practical experience with:
 * No independently verified false-alarm rate or long-term reliability data is currently documented.
 * The prototype is not a certified security, industrial inspection, or safety device.
 
-## 🚀 11. Future Improvements
-
-Potential improvements include:
-
-* Verify the circuit against the assembled hardware.
-* Measure the NE555 output waveform with an oscilloscope.
-* Compare output behaviour with and without nearby metal.
-* Conduct repeatable detection-range experiments.
-* Record test conditions and measured results.
-* Improve PCB routing and soldering documentation.
-* Add a detailed NE555 pin-connection table.
-* Improve mechanical protection and portability.
 
 
-**Project repository:** [N555-Timer-IC-Based-Metal-Detector](https://github.com/khairnarparth291-crypto/N555-Timer-IC-Based-Metal-Detector)
